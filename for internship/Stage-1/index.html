@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="image">
+        <img
+          src="img/paz.png"
+          alt="Paz"
+          data-testid="slackUserImage"
+          width="100px"
+        />
+      </div>
+
+      <div class="about-me">
+        <h1 data-testid="slackUserName">Doluwamu</h1>
+        <span class="track" data-testid="myTrack"> Front-End Track </span>
+      </div>
+
+      <div class="git">
+        <a
+          href="https://github.com/Pazmoore/Stage-1.git"
+          data-testid="githubURL"
+          >My GitHub</a
+        >
+      </div>
+      <br />
+      <div class="datetime">
+        <div class="current-day">
+          <span
+            >Current Day:
+            <span
+              id="currentDay"
+              class="current-day"
+              data-testid="currentDayOfTheWeek"
+            ></span
+          ></span>
+        </div>
+
+        <div class="current-utc-time">
+          <span
+            >Current UTC Time:
+            <span
+              id="currentUTCTime"
+              class="current-utc-time"
+              data-testid="currentUTCTime"
+              >0</span
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      const currentUTCTime = document.getElementById("currentUTCTime");
+      const currentDay = document.getElementById("currentDay");
+
+      // GET CURRENT UTC TIME
+      const utcTimeMilliseconds = new Date().getTime();
+      currentUTCTime.innerText = utcTimeMilliseconds;
+
+      // GET CURRENT DAY OF THE WEEK
+      const today = new Date();
+      const dayOfWeek = today.getDay();
+      const daysOfWeek = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      currentDay.innerText = daysOfWeek[dayOfWeek];
+    </script>
+  </body>
+</html>

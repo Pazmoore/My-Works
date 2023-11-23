@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    position: relative;
+    background: linear-gradient(45deg, rgb(84, 17, 102), rgb(105, 96, 96));
+}
+body .content{
+    width: 360px;
+    display: block;
+    height: 640px;
+    margin: 50px auto;
+    background-color: rgb(233, 195, 242);
+    border-radius: 5%;
+    text-align: center;
+}
+body .content:hover{
+    border: 5px solid rgb(182, 231, 235);
+
+}
+.content img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.about-me{
+    position: relative;
+    top:-65px;
+    right: 5px;
+}
+.about-me h1{
+    color: rgb(219, 35, 60);
+    font-size: 60px;  
+}
+.about-me span{
+    color: rgb(243, 144, 144);
+    font-size: 30px;
+    position: relative;
+    top: -56px;
+}
+.git{
+    position: relative;
+    top: -90px;
+    font-size: 30px;
+    
+}
+.git a{
+    text-decoration: none;
+    color: rgb(172, 7, 191);
+}
+.git a:hover{
+    color: blueviolet;
+}
+.datetime{
+    color: rgb(170, 127, 255);
+    position: relative;
+    top: -80px;
+}
+
+    
